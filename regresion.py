@@ -5,8 +5,8 @@ class Regresion:
 
     def __init__(self, inputs_num):
         self.inputs_num = inputs_num
-        self.weight = [1]#[random.random() for i in range(inputs_num)]
-        self.bias = 0#random.random()
+        self.weight = [random.random() for i in range(inputs_num)]
+        self.bias = random.random()
 
         print('[{}, {}]'.format(self.weight[0], self.bias))
 
